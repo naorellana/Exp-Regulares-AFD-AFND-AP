@@ -1,0 +1,14 @@
+AFD con el lenguaje binario para validar palabras de longitud impar que terminan en 0.#
+(0|1)(0|1)0|0  #
+
+
+
+(0|1)(0|1)0 ((01)(0|1)0)*  #
+(0|1)(0|1)0(0|10|10)*  #
+0(0-1)*0 	#
+(0-1)(0-1)0 ((01)(0|1)0)* #
+((0|1)(01)0)|0 #
+
+
+AFND utilizando el lenguaje con el alfabeto {a, b, c}, que reconozca las cadenas: abc, ccbba y bca.
+abc|ccbba|bca
